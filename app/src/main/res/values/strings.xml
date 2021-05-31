@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kari Care Test</string>
+    <string name="my_profile_text">My Profile</string>
+    <string name="name_text">Anna Karenina</string>
 </resources>

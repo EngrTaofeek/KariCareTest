@@ -3,6 +3,7 @@ package com.taofeek.karicaretest;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.test_menu);
+        toolbar.getOverflowIcon().setColorFilter(getResources().getColor(R.color.deep_blue), PorterDuff.Mode.SRC_ATOP);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

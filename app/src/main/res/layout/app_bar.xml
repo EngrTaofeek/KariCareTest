@@ -5,23 +5,22 @@
     android:id="@+id/tool_bar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/white"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="16dp"
-            android:background="@color/white"
-            android:tint="@color/deep_blue"
+            android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/abc_vector_test" />
+            app:srcCompat="@drawable/abc_vector_test"
+            app:tint="@color/deep_blue" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
